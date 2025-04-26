@@ -1,0 +1,59 @@
+.MainPageContainer{
+  /* border: 2px solid red; */
+  background-color:  rgb(240, 250, 251);
+}
+.display{
+  height: 100vh;
+}
+.MainPage{
+  margin: auto;
+  width: 80%;
+  /* border: 3px solid; */
+  padding: 1rem 0;
+}
+
+.Searchbar{
+  border: 3px solid;
+  margin: auto;
+  width: 90%;
+  padding: 1rem 2rem;
+  position: relative;
+  top: -3rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex; 
+}
+
+.Filtered{
+  display: flex;
+  background-color: rgb(224, 235, 230);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.Searchbar p{
+  color: rgb(91, 164, 164);;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+}
+
+.Close{
+  background-color: rgb(91, 164, 164);
+  padding: 0.7rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.Close:hover{
+  background-color: black;
+}
+
+.Clear{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.Clear:hover{
+  text-decoration: underline;
+}

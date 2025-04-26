@@ -1,0 +1,9 @@
+.header{
+  /* border: 5px solid red; */
+  background-image: url(/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(91, 164, 164);
+  height: 25vh;
+
+}
