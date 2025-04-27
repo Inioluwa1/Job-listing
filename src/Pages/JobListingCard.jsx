@@ -20,6 +20,13 @@ export default function JobListingCard({displayJobs, setdisplayJobs, setFilters,
     else setFilters(prev => [...prev, language])
   }
   
+  const handleToolFilter = (tool) => {
+    setdisplayJobs(prev => 
+      prev.filter(job => job.tools.includes(tool))
+    )
+    if (filters.includes(tool)) return
+    else setFilters(prev => [...prev, tool])
+  }
 
   return (
     <div>
@@ -50,6 +57,14 @@ export default function JobListingCard({displayJobs, setdisplayJobs, setFilters,
             {job.languages.map((language, index) => (
               <p key={index} onClick={() => handleLanguageFilter(language)}> {language} </p>
             ))}
+          </div>
+          <div className='JobListingCardSkillsTools'>
+          <div className='JobListingCardSkillsTools'>
+            {job.tools.map( (tool, index) => (
+                <p key={index} onClick={() => handleToolFilter(tool)}>{job.tools? `${tool}` : null} </p>
+            ))} 
+          </div>
+ 
           </div>
         </div>
       </div>

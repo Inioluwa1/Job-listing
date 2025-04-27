@@ -7,3 +7,11 @@
   height: 25vh;
 
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-image: url(/bg-header-mobile.svg);
+    height: 20vh;;
+  }
+  
+}

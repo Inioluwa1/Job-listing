@@ -27,7 +27,7 @@ export default function MainPage() {
   if (filters?.length === 0) {
     setdisplayJobs(joblisting)
   } else {
-    const newjobs = joblisting.filter(job => filters.every(filter => job.languages.includes(filter) || job.role === filter))
+    const newjobs = joblisting.filter(job => filters.every(filter => job.languages.includes(filter) || job.role === filter || job.tools.includes(filter)))
     console.log(filters.length)
 
     setdisplayJobs(newjobs)
@@ -51,12 +51,14 @@ export default function MainPage() {
         
         {filters.length !== 0 &&
         <div className='Searchbar'>
+          <div className="Search">
             {filters.map ((filter, index) => (
               <span className='Filtered' key={index}>
                 <p> {filter} </p> 
                 <img src='icon-remove.svg' className='Close' onClick={() => removeFilter(filter)} />
               </span>
             ))}
+            </div>
             <p className='Clear' onClick={clearfilters}> Clear </p>
         </div>}
 

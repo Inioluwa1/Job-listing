@@ -11,8 +11,8 @@
   position: relative;
 }
 .featured{
-  border: 3px solid green;
-  box-shadow: -3px 0 0 hsl(180, 14%, 20%), 3px 3px 10px hsl(180, 8%, 52%), -3px -3px 30px hsl(180, 8%, 52%) ;
+  /* border: 3px solid green; */
+  box-shadow: -7px 0 0 rgb(78, 137, 137), 3px 3px 10px hsl(180, 8%, 52%), -3px -3px 30px hsl(180, 8%, 52%) ;
 }
 .JobListingCardLogo{
   /* border: 1px solid; */
@@ -27,7 +27,6 @@
 .JobListingCardDetailsCompany{
   /* border: 1px solid; */
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 .Company{
@@ -65,7 +64,6 @@
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  /* width: 40%; */
 }
 .JobListingCardDetailsLocation p, li{
   color: grey;
@@ -83,7 +81,6 @@
 .JobListingCardSkillsRoleLevel{
   display: flex;
   /* border: 2px solid; */
-  /* margin-right: 0.5rem; */
 }
 
 .JobListingCardSkills p{
@@ -110,4 +107,62 @@
 .JobListingCardSkillsLanguages p{
   margin-right: 0;
   margin-left: 0.5rem;
+}
+
+.JobListingCardSkillsTools{
+
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .JobListingCard{
+    flex-direction: column;
+    width: 100%;
+    /* margin: 1rem auto; */
+    padding: 0 1.5rem;
+    margin: 2rem auto 5rem auto
+  }
+  .JobListingCardLogo{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: -50px;
+    /* border: 3px solid; */
+    align-items: flex-start;
+  }
+  .JobListingCardDetails{
+    width: 100%;
+    margin: auto;
+    margin-top: -50px;
+  }
+  .Company{
+    margin-right: 2rem
+  }
+  .Role{
+    color: black;
+    margin: 1rem 0;
+  }
+  .JobListingCardDetailsLocation{
+    /* border: 3px solid; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .JobListingCardDetailsLocation p, li{
+    font-size: 1.14rem;
+  }
+  .JobListingCardSkills{
+    position: relative;
+    /* right: 20px; */
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .JobListingCardSkills p{
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  
 }

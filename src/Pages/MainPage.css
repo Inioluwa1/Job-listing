@@ -23,15 +23,21 @@
   border-radius: 10px;
   display: flex; 
 }
+.Search{
+  /* border: 3px solid; */
+  width: 80%;
+  display: flex;
+}
 
 .Filtered{
   display: flex;
   background-color: rgb(224, 235, 230);
   border-radius: 5px;
   margin-right: 10px;
+  /* border: 3px solid; */
 }
 .Searchbar p{
-  color: rgb(91, 164, 164);;
+  color: rgb(91, 164, 164);
   font-weight: bold;
   padding: 0.3rem 1rem;
 }
@@ -57,3 +63,18 @@
 .Clear:hover{
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .MainPage{
+    width: 90%;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+  .Search{
+    /* border: 3px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    row-gap: 0.5rem;
+  }
+} 
