@@ -110,7 +110,6 @@
 }
 
 .JobListingCardSkillsTools{
-
   display: flex;
 }
 
@@ -119,8 +118,9 @@
     flex-direction: column;
     width: 100%;
     /* margin: 1rem auto; */
-    padding: 0 1.5rem;
-    margin: 2rem auto 5rem auto
+    padding: 0 1rem;
+    margin: 2rem auto 5rem auto;
+  
   }
   .JobListingCardLogo{
     width: 100%;
@@ -159,10 +159,39 @@
     margin-bottom: 2rem;
     width: 100%;
   }
+  .JobListingCardSkillsLanguages{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
 
   .JobListingCardSkills p{
     font-weight: 700;
     font-size: 1.3rem;
+  } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .JobListingCard{
+    padding-bottom: 3.2rem;
   }
-  
+  .JobListingCardSkills{
+    /* border: 3px solid red; */
+    position: absolute;
+    margin-top: 5%;
+    top: 75px;
+    left: 0;
+    /* display: none; */
+  }
+  .Role{
+    /* border: 3px solid; */
+    width: 150%;
+  }
+  .JobListingCardDetailsLocation{
+    /* border: 3px solid; */
+    width: 20rem;
+    position: absolute;
+    bottom: 5px;
+    left: 40px;
+  }
 }
